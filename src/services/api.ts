@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from "axios";
 
 const api: AxiosInstance = axios.create({
-    baseURL: ""
+    baseURL: "https://api.deezer.com/"
 })
 
 export { api };
