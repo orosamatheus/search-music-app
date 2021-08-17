@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+## 💻 Sobre o projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi feito como teste, tem como objetivo implementar um Webapp que consiste em pré-visualização e listagem de músicas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ⚙️ Funcionalidades
 
-### `yarn start`
+- [x] Ver os charts do momento assim que entra na aplicação
+- [x] Pesquisar por título, álbum e artistas
+- [x] Mostrar dados da música
+- [x] Link para acessar a música completa no deezer
+- [x] Adicionar e remover músicas na lista de favoritos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+## 🛠 Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+As seguintes ferramentas foram usadas na construção do projeto:
 
-### `yarn test`
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Redux
+- react-redux
+- redux-persist
+- react-router-dom
+- contextAPI
+- axios
+- styled-components
 
-### `yarn build`
+## 🎨 Layout web
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://user-images.githubusercontent.com/47943431/129666948-45fdf9fa-435a-4bcc-b4bd-d56cb0aa4b8b.png)
+![image](https://user-images.githubusercontent.com/47943431/129666994-aac9ad14-4b06-46c5-8fa1-5703b3fa2230.png)
+![image](https://user-images.githubusercontent.com/47943431/129667079-a35dbd24-6183-4d54-9687-e3ad8fadfe95.png)
+![image](https://user-images.githubusercontent.com/47943431/129667208-98323b24-3c40-4750-b343-5847f8428e5f.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎨 Layout mobile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://user-images.githubusercontent.com/47943431/129668045-9bfcd72b-63a0-4ac2-9fa1-e820692bf622.png)
+![image](https://user-images.githubusercontent.com/47943431/129667452-2c7b7432-a360-45bc-93fb-a5fa1b69947f.png)
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### 🧭 Rodando a aplicação web
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
 
-## Learn More
+# Clone este repositório
+$ git clone https://github.com/orosamatheus/search-music-app.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Instale as dependências
+$ yarn 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Execute a aplicação em modo de desenvolvimento
+$ yarn start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
