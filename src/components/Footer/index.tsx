@@ -1,18 +1,13 @@
 import { Container } from "./styles"
-
 import { FaLinkedinIn, FaInstagram, FaGithub, FaTwitter } from "react-icons/fa"
 import { MdEmail } from "react-icons/md"
 
-
 export default function Footer(){
-
     const ano = new Date().getFullYear();
-
     return (
         <Container>
             <div className="left">
-                <strong>&#169; {ano} Matheus Rosa <em>Projeto feito para teste</em></strong>
-                
+                <strong>&#169; {ano} Matheus Rosa <em>Projeto feito para teste</em></strong> 
             </div>
             <div className="right">
                 <a href="https://www.linkedin.com/in/matheeusrosa/" target="_blank" rel="noreferrer"><FaLinkedinIn/></a>

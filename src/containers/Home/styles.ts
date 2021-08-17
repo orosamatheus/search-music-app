@@ -19,7 +19,6 @@ export const SearchBarContainer = styled.form`
         justify-content: center;
     }
 
-
     input, select{
         width: 360px;
         height: 40px;
@@ -56,8 +55,6 @@ export const SearchBarContainer = styled.form`
         filter: brightness(0.8);
         }
     }
-
-
 `
 export const MusicsContainer = styled.ul`
     display: flex;
@@ -69,8 +66,6 @@ export const MusicsContainer = styled.ul`
     @media (min-width:320px) and (max-width:768px) {
         flex-direction: column;
     }
-
-
 `
 export const ButtonContainer = styled.div`
     display: flex;

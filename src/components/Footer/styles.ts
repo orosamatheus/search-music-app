@@ -4,7 +4,6 @@ export const Container = styled.footer`
     width: 100%;
     margin: 3rem auto;
     padding: 0 3vw;
-
     font-size: 1rem;
     font-family: 'Roboto';
     color: #303240;
@@ -12,7 +11,6 @@ export const Container = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative;
     bottom: 0px;
 
@@ -20,13 +18,10 @@ export const Container = styled.footer`
         font-family: sans-serif;
         font-size: 10px;
     }
-
-
     @media (min-width: 320px) and (max-width:768px) {
         font-size: 0.8rem;
         margin-top: 150px;
     }
-
     div{
         &.right{
             a{

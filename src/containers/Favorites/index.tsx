@@ -7,9 +7,7 @@ import {
 } from "./styles"
 
 export default function Favorites() {
-
     const favorites: any = useSelector((state: RootState) => state.Favorites)
-    
     return (
         <Container>
             <MusicContainer>

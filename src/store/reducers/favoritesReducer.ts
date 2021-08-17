@@ -1,10 +1,8 @@
 import { ActionTypes } from "../constants/action-types"
 
-
 const initialState = {
     favorites: []
 }
-
 
 export const favoritesReducer = (state = initialState, action: any) => {
     switch(action.type){

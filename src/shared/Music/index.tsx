@@ -1,23 +1,33 @@
 import { useContext } from "react"
 import { Context } from "../../context/home";
 
-import { 
+import {
     MusicContainer,
     Audio,
     Button
 
- } from "./styles"
+} from "./styles"
 
-export default function Music({ id, title, img, preview, type, artistName, link, music, active }: any) {
+interface IMusicProps {
+    id: number;
+    title: string;
+    img: string;
+    preview: string;
+    type: string;
+    artistName: string;
+    link: string;
+    music?: any;
+    active: boolean
+}
 
-    const { handleLike, handleUnlike} = useContext(Context)
-
+export default function Music({ id, title, img, preview, type, artistName, link, music, active }: IMusicProps) {
+    const { handleLike, handleUnlike } = useContext(Context)
     return (
         <MusicContainer key={id}>
-            <a 
-            target="_blank"
-            rel="noreferrer"
-            href={link}>
+            <a
+                target="_blank"
+                rel="noreferrer"
+                href={link}>
                 <h2>{artistName}</h2>
                 <img src={img} alt='album' />
             </a>

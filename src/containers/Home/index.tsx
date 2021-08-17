@@ -12,7 +12,6 @@ import Music from "../../shared/Music"
 import { Context } from "../../context/home";
 
 export default function Home() {
-
     const {
         charts,
         tracks, 
@@ -22,9 +21,7 @@ export default function Home() {
         option, setOption,
         setQuery,
         index, handleSubmit
-    } = useContext(Context)
-
-        
+    } = useContext(Context) 
     return (
         <Container>
             <SearchBarContainer onSubmit={(e) => handleSubmit(e)}>
