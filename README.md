@@ -42,7 +42,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
-#### 🧭 Rodando a aplicação web
+## 🧭 Rodando a aplicação web
+
+### Antes de rodar a aplicação localmente é necessária a instalação da extensão AllowCORS
+A API da deezer não necessita de token para requisições GET, porém ela utiliza CORS, o que resulta na falta de acesso a aplicação em ambiente de desenvolvimento. Quando a aplicação é levada para ambiente de produção com um domínio https é resolvido :)
 
 ```bash
 
