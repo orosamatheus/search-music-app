@@ -1,5 +1,12 @@
 import {useState, createContext, useEffect} from 'react';
-import { ProviderProps, HomeContextProps } from './types'
+import { 
+    ProviderProps, 
+    HomeContextProps, 
+    IChartsProps,
+    ITracksProps,
+    IAlbumsProps,
+    IArtistsProps
+ } from './types'
 
 import { api } from "../services/api"
 import { addFavorite, removeFavorite } from "../store/actions/favoritesActions"
@@ -7,14 +14,16 @@ import { useDispatch } from 'react-redux';
 
 const Context = createContext({} as HomeContextProps);
 
+
+
 function HomeProvider({children}: ProviderProps){
 //redux reducers call
     const dispatch = useDispatch();
 //states
-    const [charts, setCharts] = useState([]);
-    const [tracks, setTracks] = useState([]);
-    const [albums, setAlbums] = useState([]);
-    const [artists, setArtists] = useState([]);
+    const [charts, setCharts] = useState<Array<IChartsProps>>([]);
+    const [tracks, setTracks] = useState<Array<ITracksProps>>([]);
+    const [albums, setAlbums] = useState<Array<IAlbumsProps>>([]);
+    const [artists, setArtists] = useState<Array<IArtistsProps>>([]);
     const [index, setIndex] = useState(0);
     const [limit, ] = useState(8);
     const [option, setOption] = useState("Charts");
