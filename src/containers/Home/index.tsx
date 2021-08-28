@@ -40,8 +40,9 @@ export default function Home() {
             </SearchBarContainer>
             <MusicsContainer>
                     { option === "Título"
-                        ? tracks.map((result: any) => (
+                        ? tracks.map((result: any, index: number) => result(
                             <Music
+                                key= {index}
                                 type="home"
                                 music= {result}
                                 id={result.id}
@@ -54,8 +55,9 @@ export default function Home() {
                             />    
                         ))
                         : option === "Álbum" 
-                            ? albums.map((result: any) => (
+                            ? albums.map((result: any, index: number) => (
                                 <Music
+                                    key= {index}
                                     type="home"
                                     id={result.id}
                                     title={result.title}
@@ -68,8 +70,9 @@ export default function Home() {
                                 />    
                             ))
                             : option === "Artista"
-                                ? artists.map((result: any) => (
+                                ? artists.map((result: any, index: number) => (
                                     <Music
+                                        key= {index}
                                         type="home"
                                         id={result.id}
                                         title={result.name}
@@ -81,8 +84,9 @@ export default function Home() {
 
                                     />    
                                 ))
-                                : charts.map((result: any) => (
+                                : charts.map((result: any, index: number) => (
                                     <Music
+                                        key= {index}    
                                         music= {result}
                                         type="home"
                                         id={result.id}

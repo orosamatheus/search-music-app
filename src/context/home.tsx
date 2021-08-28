@@ -19,6 +19,8 @@ const Context = createContext({} as HomeContextProps);
 function HomeProvider({children}: ProviderProps){
 //redux reducers call
     const dispatch = useDispatch();
+
+
 //states
     const [charts, setCharts] = useState<Array<IChartsProps>>([]);
     const [tracks, setTracks] = useState<Array<ITracksProps>>([]);
