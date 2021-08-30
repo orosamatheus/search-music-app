@@ -10,7 +10,8 @@ import {
 
 import { api } from "../services/api"
 import { addFavorite, removeFavorite } from "../store/actions/favoritesActions"
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from '../store/reducers';
 
 const Context = createContext({} as HomeContextProps);
 
@@ -19,6 +20,8 @@ const Context = createContext({} as HomeContextProps);
 function HomeProvider({children}: ProviderProps){
 //redux reducers call
     const dispatch = useDispatch();
+    const favorites: any = useSelector((state: RootState) => state.Favorites)
+
 
 
 //states
@@ -57,8 +60,12 @@ function HomeProvider({children}: ProviderProps){
     }
 //favorites
     function handleLike(favorite: any) {
-        dispatch(addFavorite(favorite))
-        alert("Favoritado")
+        if(favorites.favorites.find((f: any) => f.id  === favorite.id)){
+            return alert("Esta musica já foi favoritada!")
+        } else {
+            dispatch(addFavorite(favorite))
+            alert("Favoritado")
+        }
     }
     
     function handleUnlike(favorite: any){
